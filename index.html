@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rent a room - Quartos do Airbnb</title>
+        <link rel="stylesheet" href="./css/estilos.css">
+        <!-- zerando configurações -->
+        <link rel="stylesheet" href="./css/reset200802.css">
+        <!-- bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- fonts google -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- fontawesome -->
+        <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" data-auto-replace-svg="nest"></script>
+    </head>
+    <body>
+        <div class="warning-top-center">
+            Confira informações atualizadas sobre nossas políticas de cancelamento e ações em resposta à COVID-19. <a href="#">Saiba mais</a>
+        </div>
+        <!-- barra de navegação -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white container">
+            <a class="navbar-brand nav-title" href="#">Rent a room</a>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-mystic-pearl">Seja um anfitrião</button>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Dúvidas?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Entrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Cadastre-se</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- barra de pesquisa -->
+        <div class="container mt-3">
+            <form class="form mx-auto form-inline" method="POST" action="#">
+                <div class="input-group">
+                    <label class="label">Localização</label>
+                    <input class="" type="text" placeholder="Destino" name="going">
+                </div>
+                <div class="input-group">
+                    <label class="label">Check-In</label>
+                    <input class="" type="text" name="checkin" placeholder="Insira as datas" id="input-start">
+                </div>
+                <div class="input-group">
+                    <label class="label">Qte. de Hóspedes</label>
+                    <div class="input-group-icon">
+                        <div class="icon-con">
+                            <span class="plus">+</span>
+                            <span class="minus">-</span>
+                        </div>
+                        <input class="guests" type="number" name="guests" value="0">
+                    </div>
+                </div>
+                <button class="btn btn-mystic-pearl" type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <div class="container mt-5">
+            <div class="cards-flex" id="results">
+                
+            </div>
+        </div>
+
+        <!-- rodapé do site -->
+        <footer class="container">
+            <hr>
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2020 Todos os direitos reservados a <a class="link" href="https://jvictor0205.github.io/portfolio/">João Victor Rodrigues</a>.</p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="icones-social">
+                        <li><a class="instagram ml-2" href="https://instagram.com/jvictorrodrig/"><i class="fab fa-instagram fa-lg"></i></a></li>
+                        <li><a class="site ml-2" href="https://jvictor0205.github.io/portfolio/"><i class="fas fa-globe"></i></a></li>
+                        <li><a class="codepen ml-2" href="https://codepen.io/jvictor0205"><i class="fab fa-codepen"></i></a></li>
+                        <li><a class="linkedin ml-2" href="https://www.linkedin.com/in/joao-victor-estatistico/"><i class="fab fa-linkedin-in"></i></a></li>   
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+        <script defer type="text/javascript" src="./js/script.js"></script>
+    </body>
+</html>
